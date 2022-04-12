@@ -6,7 +6,7 @@
 void print_alphabet_x10(void)
 {
 	int count = 0;
-	chat letter;
+	char letter;
 
 	while (count++ <=9)
 	{
