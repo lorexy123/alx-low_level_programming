@@ -24,7 +24,7 @@ void rev_string(char *s)
 	start_c = s;
 	end_c = s;
 
-	for (i = 0; ! < count - 1; i++)
+	for (i = 0; !< count - 1; i++)
 	{
 		end_c++;
 	}
