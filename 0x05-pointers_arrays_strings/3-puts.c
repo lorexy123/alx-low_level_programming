@@ -9,7 +9,7 @@
 
 void _puts(char *str)
 {
-	char *C;
+	char *c;
 	int m;
 
 	c = str;
