@@ -15,7 +15,7 @@ void reverse_array(int *a, int n)
 
   s = 0;
   e = n - 1;
-  /**
+  /*
    * set value in array a in temp
    * then place the last array in
    * the first array then place
