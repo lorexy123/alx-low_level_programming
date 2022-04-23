@@ -17,7 +17,7 @@ char *leet(char *s)
   /*iterate values in array s*/
   while (s[c] != '\0')
   {
-    /**
+    /*
      * loop through array value five times
      * to check if the value is equal to
      * any small letter in array sl or
