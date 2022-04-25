@@ -1,45 +1,22 @@
 #include "main.h"
 /**
-  * print_number - prints an integer
-  * @n: number to be printed
-  * Return: Always 0 (Success)
-  */
+ * print_number - prints an integer
+ * @n:.input integer parameter
+ *
+ *
+ */
 void print_number(int n)
 {
-	int power, neg, hold;
+	unsigned int i = n;
 
-	neg = 0;
-	power = 1;
-	hold = n;
 	if (n < 0)
 	{
-		_putchar('-');
-		neg = 1;
+		_putchar(45);
+		i = -i;
 	}
-	while (hold > 9 || hold < -9)
+	if (i / 10)
 	{
-		power *= 10;
-		hold /= 10;
+		print_number(i / 10);
 	}
-	while (power > 0)
-	{
-		if (power > 9)
-		{
-			if (!neg)
-				_putchar((n / power % 10) + '0');
-			else
-				_putchar((n / power % 10) * -1 + '0');
-
-			power /= 10;
-		}
-		if (power == 1)
-		{
-			if (neg)
-				_putchar((n % 10) * -1 + '0');
-			else
-				_putchar(n % 10 + '0');
-			power = 0;
-		}
-	}
-	return (0);
+	_putchar(i % 10 + '0');
 }
